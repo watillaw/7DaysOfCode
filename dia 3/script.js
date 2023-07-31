@@ -1,5 +1,5 @@
 var direcao = prompt('Digite [1] para front-end e [2] para back-end:');
-var stacks = "";
+var stacks = [];
 var validador = 1;
 
 if (direcao == 1){
@@ -16,10 +16,8 @@ if(escolhaUsuario == 1){
 	alert(`Um desenvolvedor FULLSTACK tem seu valor no mercado!`);
 }
 
-
-
-while(validador == 1){
-	stacks = prompt(`Digite a stack que deseja aprender:`);
-	validador = prompt(`Digite 1 para continuar ou 2 para parar`);
-	console.log(`AS STACKS ESCOLHIDAS FORAM: ${stacks}`)
+while(validador === 1){
+	let stackEscolhida = prompt(`Digite a stack que deseja aprender:`);
+	stacks.add(stackEscolhida);
+	var validador = prompt(`Digite 1 para continuar ou 2 para parar`);
 }
